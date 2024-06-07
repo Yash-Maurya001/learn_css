@@ -1,0 +1,137 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+.main {
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+.left {
+	height: 100%;
+	width: 40%;
+	position: relative;
+}
+
+.right {
+	height: 100%;
+	width: 60%;
+	background-color: yellowgreen;
+}
+
+.right-top {
+	height: 50%;
+	background-color: blue;
+	display: flex;
+}
+
+.right-top-left {
+	width: 50%;
+	background-image: url("https://images.pexels.com/photos/2090903/pexels-photo-2090903.jpeg");
+	background-size: cover;
+	background-position: center;
+}
+
+.right-top-right {
+	width: 50%;
+	background-image: url("https://images.pexels.com/photos/691166/pexels-photo-691166.jpeg");
+	background-size: cover;
+	background-position: center;
+}
+
+.right-bottom {
+	width: 100%;
+	height: 50%;
+	background-image: url("https://images.pexels.com/photos/820904/pexels-photo-820904.jpeg");
+	background-size: cover;
+	background-position: center;
+}
+
+.Lnav {
+	width: 100%;
+	padding: 20px 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.LnavR {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.LnavR a {
+	text-decoration: none;
+	color: black;
+	margin: 0 10px;
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+.LnavR i {
+	font-size: 1.2rem;
+	margin-left: 3%;
+	color: royalblue;
+}
+
+.Lnav i {
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+
+.left .content {
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.content h1 {
+	font-size: 90px;
+	font-weight: 600;
+	color: black;
+}
+.content p {
+	width: fit-content;
+	font-size: 1rem;
+	font-weight: 400;
+	color: black;
+
+	opacity: 0.6;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.content a {
+	text-decoration: none;
+	color: black;
+	border-bottom: 2px solid black;
+	padding-bottom: 5px;
+	font-weight: 500;
+}
+
+@media (max-width: 750px) {
+	.main {
+		flex-direction: column;
+	}
+
+	.main .left {
+		width: 100%;
+	}
+
+	.main .right {
+		width: 100%;
+	}
+}
