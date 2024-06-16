@@ -1,0 +1,60 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "JetBrains Mono", monospace;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+
+.main {
+	width: 100%;
+	height: 100%;
+	background-color: #dadada;
+}
+
+.center {
+	width: 65%;
+	height: 80%;
+
+	position: absolute;
+	top: 50%;
+	left: 20%;
+	transform: translate(0%, -50%);
+}
+
+.imgcontainer {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+
+	position: absolute;
+}
+
+.imgcontainer img {
+	height: 100%;
+	object-fit: cover;
+	width: auto;
+}
+
+.text {
+	position: absolute;
+	overflow: hidden;
+	z-index: 1;
+	top: 15%;
+	left: -10%;
+	width: 400px;
+
+	height: 100px;
+}
+
+.text h1 {
+	color: #fff;
+	font-size: 6vw;
+	position: absolute;
+	top: 100px;
+}
